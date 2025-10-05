@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkTech: Communication Skills in IT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#3B82F6',
+                        },
+                        secondary: {
+                            500: '#10B981',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-image: linear-gradient(90deg, #3B82F6, #10B981);
+        }
+        .vanta-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen">
+    <div id="vanta-bg" class="vanta-bg"></div>
+    
+    <!-- Navigation -->
+    <nav class="bg-gray-800 bg-opacity-80 backdrop-blur-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <span class="text-xl font-bold gradient-text">TalkTech</span>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                            <a href="#basics" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Basics</a>
+                            <a href="#types" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Types</a>
+                            <a href="#barriers" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Barriers</a>
+                            <a href="#importance" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Importance</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-700">
+                        <i data-feather="moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative py-20 px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-6">
+                <span class="gradient-text">Communication Skills</span> in IT
+            </h1>
+            <p class="text-xl text-gray-300 mb-8">
+                Master the art of effective communication in Information Technology as per Class 11 syllabus.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#basics" class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                    Start Learning
+                </a>
+                <a href="#quiz" class="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                    Take Quiz
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+        <!-- Basics Section -->
+        <section id="basics" class="mb-20">
+            <div class="bg-gray-800 bg-opacity-70 backdrop-blur-sm rounded-xl p-8 shadow-lg">
+                <div class="flex items-center mb-6">
+                    <div class="bg-primary-500 p-3 rounded-lg mr-4">
+                        <i data-feather="message-square" class="text-white"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Basics of Communication</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-primary-400">Definition</h3>
+                        <p class="text-gray-300 mb-6">
+                            Communication is the process of exchanging information, ideas, thoughts, feelings, and emotions through speech, signals, writing, or behavior.
+                        </p>
+                        <div class="bg-gray-700 p-4 rounded-lg mb-6">
+                            <h4 class="font-medium text-secondary-400 mb-2">Key Components:</h4>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-300">
+                                <li>Sender (who initiates the communication)</li>
+                                <li>Message (the content being communicated)</li>
+                                <li>Medium (the channel used)</li>
+                                <li>Receiver (who receives the message)</li>
+                                <li>Feedback (response from receiver)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-primary-400">Process Diagram</h3>
+                        <div class="bg-gray-700 p-6 rounded-lg flex justify-center items-center h-full">
+                            <div class="text-center">
+                                <div class="flex justify-center space-x-8 mb-6">
+                                    <div class="flex flex-col items-center">
+                                        <div class="bg-primary-500 w-12 h-12 rounded-full flex items-center justify-center text-white mb-2">
+                                            1
+                                        </div>
+                                        <span class="text-sm text-gray-300">Sender</span>
+                                    </div>
+                                    <div class="arrow">
+                                        <i data-feather="arrow-right" class="text-gray-400 mt-4"></i>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <div class="bg-primary-500 w-12 h-12 rounded-full flex items-center justify-center text-white mb-2">
+                                            2
+                                        </div>
+                                        <span class="text-sm text-gray-300">Message</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center space-x-8">
+                                    <div class="arrow rotate-180">
+                                        <i data-feather="arrow-right" class="text-gray-400 mt-4"></i>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <div class="bg-primary-500 w-12 h-12 rounded-full flex items-center justify-center text-white mb-2">
+                                            3
+                                        </div>
+                                        <span class="text-sm text-gray-300">Feedback</span>
+                                    </div>
+                                    <div class="arrow">
+                                        <i data-feather="arrow-right" class="text-gray-400 mt-4"></i>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center space-x-8 mt-6">
+                                    <div class="flex flex-col items-center">
+                                        <div class="bg-primary-500 w-12 h-12 rounded-full flex items-center justify-center text-white mb-2">
+                                            4
+                                        </div>
+                                        <span class="text-sm text-gray-300">Receiver</span>
+                                    </div>
+                                    <div class="arrow">
+                                        <i data-feather="arrow-right" class="text-gray-400 mt-4"></i>
+                                    </div>
+                                    <div class="flex flex-col items-center">
+                                        <div class="bg-primary-500 w-12 h-12 rounded-full flex items-center justify-center text-white mb-2">
+                                            5
+                                        </div>
+                                        <span class="text-sm text-gray-300">Medium</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Types Section -->
+        <section id="types" class="mb-20">
+            <div class="bg-gray-800 bg-opacity-70 backdrop-blur-sm rounded-xl p-8 shadow-lg">
+                <div class="flex items-center mb-6">
+                    <div class="bg-primary-500 p-3 rounded-lg mr-4">
+                        <i data-feather="type" class="text-white"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Types of Communication</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-primary-400">1. Verbal Communication</h3>
+                        <p class="text-gray-300 mb-4">
+                            Communication through spoken or written words. In IT, this includes emails, reports, presentations, and meetings.
+                        </p>
+                        <div class="bg-gray-700 p-4 rounded-lg mb-6">
+                            <h4 class="font-medium text-secondary-400 mb-2">Subtypes:</h4>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-300">
+                                <li>Oral: Face-to-face, phone calls, video conferences</li>
+                                <li>Written: Emails, reports, documentation</li>
+                            </ul>
+                        </div>
+                        <h4 class="font-medium text-gray-400 mb-2">IT Examples:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm">Technical Documentation</span>
+                            <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm">Client Meetings</span>
+                            <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm">Bug Reports</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-primary-400">2. Non-Verbal Communication</h3>
+                        <p class="text-gray-300 mb-4">
+                            Communication without words, using body language, facial expressions, gestures, etc. Important in video calls and presentations.
+                        </p>
+                        <div class="bg-gray-700 p-4 rounded-lg mb-6">
+                            <h4 class="font-medium text-secondary-400 mb-2">Subtypes:</h4>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-300">
+                                <li>Body Language: Posture, gestures, eye contact</li>
+                                <li>Para-language: Tone, pitch, volume of voice</li>
+                                <li>Visuals: Charts, diagrams, presentations</li>
+                            </ul>
+                        </div>
+                        <h4 class="font-medium text-gray-400 mb-2">IT Examples:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm">Presentation Slides</span>
+                            <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm">Video Conferencing</span>
+                            <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm">Flowcharts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-primary-400">3. Visual Communication</h3>
+                        <p class="text-gray-300 mb-4">
+                            Using visual elements to convey information. Crucial in UI/UX design and data visualization.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm">Infographics</span>
+                            <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm">Dashboards</span>
+                            <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm">Wireframes</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-primary-400">4. Formal vs Informal</h3>
+                        <p class="text-gray-300 mb-4">
+                            Formal communication follows official channels, while informal is casual. Both are important in IT workplaces.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm">Official Reports</span>
+                            <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm">Team Chats</span>
+                            <span class="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-sm">Code Reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Barriers Section -->
+        <section id="barriers" class="mb-20">
+            <div class="bg-gray-800 bg-opacity-70 backdrop-blur-sm rounded-xl p-8 shadow-lg">
+                <div class="flex items-center mb-6">
+                    <div class="bg-primary-500 p-3 rounded-lg mr-4">
+                        <i data-feather="alert-triangle" class="text-white"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Barriers to Effective Communication</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gray-700 p-6 rounded-lg">
+                        <div class="bg-red-500 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <i data-feather="x" class="text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Language Barriers</h3>
+                        <p class="text-gray-300 text-sm">
+                            Technical jargon, non-native speakers, and ambiguous terminology can hinder understanding.
+                        </p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg">
+                        <div class="bg-red-500 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <i data-feather="cloud-off" class="text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Technological Issues</h3>
+                        <p class="text-gray-300 text-sm">
+                            Poor connectivity, incompatible software, or lack of technical skills can disrupt communication.
+                        </p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg">
+                        <div class="bg-red-500 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <i data-feather="user-x" class="text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Psychological Barriers</h3>
+                        <p class="text-gray-300 text-sm">
+                            Stress, preconceptions, and lack of attention can prevent effective message reception.
+                        </p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg">
+                        <div class="bg-red-500 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <i data-feather="clock" class="text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Time Constraints</h3>
+                        <p class="text-gray-300 text-sm">
+                            Tight deadlines may lead to rushed or incomplete communication.
+                        </p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg">
+                        <div class="bg-red-500 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <i data-feather="layers" class="text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Organizational Structure</h3>
+                        <p class="text-gray-300 text-sm">
+                            Complex hierarchies can distort messages as they pass through multiple levels.
+                        </p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-lg">
+                        <div class="bg-red-500 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                            <i data-feather="slash" class="text-white"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Cultural Differences</h3>
+                        <p class="text-gray-300 text-sm">
+                            Different cultural norms can lead to misunderstandings in global IT teams.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-8 bg-gray-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-primary-400">Overcoming Barriers</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-medium text-secondary-400 mb-2">For Language Barriers:</h4>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-300">
+                                <li>Use simple, clear language</li>
+                                <li>Define technical terms</li>
+                                <li>Use visual aids when possible</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-secondary-400 mb-2">For Technical Barriers:</h4>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-300">
+                                <li>Ensure all team members have necessary tools</li>
+                                <li>Provide training if needed</li>
+                                <li>Have backup communication channels</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Importance Section -->
+        <section id="importance" class="mb-20">
+            <div class="bg-gray-800 bg-opacity-70 backdrop-blur-sm rounded-xl p-8 shadow-lg">
+                <div class="flex items-center mb-6">
+                    <div class="bg-primary-500 p-3 rounded-lg mr-4">
+                        <i data-feather="award" class="text-white"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Importance in IT</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="bg-gray-700 p-6 rounded-lg h-full">
+                            <h3 class="text-xl font-semibold mb-4 text-primary-400">Why Communication Matters in IT</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="bg-secondary-500 p-2 rounded-lg mr-4">
+                                        <i data-feather="check" class="text-white"></i>
+                                    </div>
+                                    <p class="text-gray-300">
+                                        <span class="font-medium">Effective Team Collaboration:</span> IT projects require coordination between developers, designers, managers, and clients.
+                                    </p>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-secondary-500 p-2 rounded-lg mr-4">
+                                        <i data-feather="check" class="text-white"></i>
+                                    </div>
+                                    <p class="text-gray-300">
+                                        <span class="font-medium">Client Requirements:</span> Clear communication ensures software meets business needs.
+                                    </p>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-secondary-500 p-2 rounded-lg mr-4">
+                                        <i data-feather="check" class="text-white"></i>
+                                    </div>
+                                    <p class="text-gray-300">
+                                        <span class="font-medium">Documentation:</span> Well-written technical documents save time and prevent errors.
+                                    </p>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-secondary-500 p-2 rounded-lg mr-4">
+                                        <i data-feather="check" class="text-white"></i>
+                                    </div>
+                                    <p class="text-gray-300">
+                                        <span class="font-medium">Career Growth:</span> Professionals with strong communication skills advance faster.
+                                    </p>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-secondary-500 p-2 rounded-lg mr-4">
+                                        <i data-feather="check" class="text-white"></i>
+                                    </div>
+                                    <p class="text-gray-300">
+                                        <span class="font-medium">Problem Solving:</span> Clear communication helps identify and resolve technical issues faster.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-gradient-to-br from-primary-500 to-secondary-500 p-1 rounded-lg h-full">
+                            <div class="bg-gray-900 rounded-lg p-6 h-full">
+                                <h3 class="text-xl font-semibold mb-4 text-primary-400">IT Communication Scenarios</h3>
+                                <div class="space-y-6">
+                                    <div>
+                                        <h4 class="font-medium text-secondary-400 mb-2">1. Requirements Gathering</h4>
+                                        <p class="text-gray-300">
+                                            Translating business needs into technical specifications requires asking the right questions and active listening.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-secondary-400 mb-2">2. Daily Standups</h4>
+                                        <p class="text-gray-300">
+                                            Brief, focused updates help teams stay aligned without wasting time.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-secondary-400 mb-2">3. Code Reviews</h4>
+                                        <p class="text-gray-300">
+                                            Constructive feedback improves code quality while maintaining team morale.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-secondary-400 mb-2">4. Incident Reports</h4>
+                                        <p class="text-gray-300">
+                                            Clear documentation of outages helps prevent future occurrences.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-secondary-400 mb-2">5. User Documentation</h4>
+                                        <p class="text-gray-300">
+                                            Well-written manuals reduce support requests and improve user experience.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="mb-20">
+            <div class="bg-gray-800 bg-opacity-70 backdrop-blur-sm rounded-xl p-8 shadow-lg">
+                <div class="flex items-center mb-6">
+                    <div class="bg-primary-500 p-3 rounded-lg mr-4">
+                        <i data-feather="help-circle" class="text-white"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Test Your Knowledge</h2>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg">
+                    <div id="quiz-container">
+                        <div id="quiz-intro">
+                            <h3 class="text-xl font-semibold mb-4 text-primary-400">Communication Skills Quiz</h3>
+                            <p class="text-gray-300 mb-6">
+                                Test your understanding of communication concepts covered in Class 11 IT curriculum.
+                            </p>
+                            <button onclick="startQuiz()" class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                                Start Quiz
+                            </button>
+                        </div>
+                        <div id="quiz-questions" class="hidden">
+                            <!-- Questions will be inserted here by JavaScript -->
+                        </div>
+                        <div id="quiz-results" class="hidden">
+                            <h3 class="text-xl font-semibold mb-4 text-primary-400">Your Results</h3>
+                            <p id="result-text" class="text-gray-300 mb-6"></p>
+                            <button onclick="resetQuiz()" class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                                Take Again
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-20 border-t border-gray-700 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-xl font-bold gradient-text">TalkTech</span>
+                    <p class="text-gray-400 text-sm mt-2">Mastering IT Communication for Class 11</p>
+                </div>
+                <div class="text-gray-400 text-sm">
+                    <p>Created with ❤️ by Rounak Kawachi</p>
+                    <p class="mt-1">© 2023 All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script>
+        // Vanta.js background
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3b82f6,
+            backgroundColor: 0x111827,
+            size: 1.00
+        });
+
+        // Theme toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        themeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            const icon = themeToggle.querySelector('svg');
+            if (html.classList.contains('dark')) {
+                feather.icons.moon.replace();
+            } else {
+                feather.icons.sun.replace();
+            }
+        });
+
+        // Quiz functionality
+        const questions = [
+            {
+                question: "Which of these is NOT a component of the communication process?",
+                options: ["Sender", "Message", "Technology", "Feedback"],
+                answer: 2
+            },
+            {
+                question: "What is the main purpose of feedback in communication?",
+                options: [
+                    "To complete the communication loop",
+                    "To make the sender feel good",
+                    "To extend the conversation",
+                    "To complicate the message"
+                ],
+                answer: 0
+            },
+            {
+                question: "Which communication type is most appropriate for documenting software requirements?",
+                options: [
+                    "Verbal - Oral",
+                    "Verbal - Written",
+                    "Non-verbal",
+                    "Visual"
+                ],
+                answer: 1
+            },
+            {
+                question: "What is the primary barrier when technical jargon is used with non-technical clients?",
+                options: [
+                    "Language barrier",
+                    "Technological barrier",
+                    "Psychological barrier",
+                    "Organizational barrier"
+                ],
+                answer: 0
+            },
+            {
+                question: "Why is communication especially important in IT projects?",
+                options: [
+                    "It helps translate business needs to technical solutions",
+                    "It ensures team members work in isolation",
+                    "It makes documentation unnecessary",
+                    "It reduces the need for meetings"
+                ],
+                answer: 0
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function startQuiz() {
+            document.getElementById('quiz-intro').classList.add('hidden');
+            document.getElementById('quiz-questions').classList.remove('hidden');
+            showQuestion();
+        }
+
+        function showQuestion() {
+            const container = document.getElementById('quiz-questions');
+            const q = questions[currentQuestion];
+            
+            container.innerHTML = `
+                <h3 class="text-lg font-semibold mb-4">Question ${currentQuestion + 1} of ${questions.length}</h3>
+                <p class="text-gray-300 mb-6">${q.question}</p>
+                <div id="quiz-options" class="space-y-3 mb-6">
+                    ${q.options.map((option, index) => `
+                        <div class="flex items-center">
+                            <input type="radio" id="option-${index}" name="quiz" value="${index}" class="hidden peer">
+                            <label for="option-${index}" class="flex items-center cursor-pointer w-full p-3 bg-gray-600 rounded-lg hover:bg-gray-500 peer-checked:bg-primary-500 peer-checked:text-white transition duration-200">
+                                <span class="mr-3">${String.fromCharCode(65 + index)}.</span>
+                                <span>${option}</span>
+                            </label>
+                        </div>
+                    `).join('')}
+                </div>
+                <button onclick="checkAnswer()" class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                    ${currentQuestion === questions.length - 1 ? 'Finish Quiz' : 'Next Question'}
+                </button>
+            `;
+        }
+
+        function checkAnswer() {
+            const selectedOption = document.querySelector('input[name="quiz"]:checked');
+            if (!selectedOption) return;
+
+            const answer = parseInt(selectedOption.value);
+            if (answer === questions[currentQuestion].answer) {
+                score++;
+            }
+
+            currentQuestion++;
+            if (currentQuestion < questions.length) {
+                showQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            document.getElementById('quiz-questions').classList.add('hidden');
+            const results = document.getElementById('quiz-results');
+            results.classList.remove('hidden');
+            
+            const percentage = Math.round((score / questions.length) * 100);
+            let message = '';
+            
+            if (percentage >= 80) {
+                message = `Excellent! You scored ${percentage}%. You have a strong understanding of communication concepts in IT.`;
+            } else if (percentage >= 60) {
+                message = `Good job! You scored ${percentage}%. You understand most communication concepts but could review some areas.`;
+            } else {
+                message = `You scored ${percentage}%. Consider reviewing the communication concepts again. Practice makes perfect!`;
+            }
+            
+            document.getElementById('result-text').textContent = message;
+        }
+
+        function resetQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            document.getElementById('quiz-results').classList.add('hidden');
+            document.getElementById('quiz-intro').classList.remove('hidden');
+        }
+
+        // Initialize feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
